@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Citician</title>
+        <link rel="stylesheet" href="politicianprofile.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo-container">
+                <a href="politicianhome.html"> <img src="image (1).png" alt="Logo" class="logo"></a>
+                <h1 class="citician-title">Citician</h1>
+            </div>
+            <div class="nav">
+                <a href="politicianhome.html" class="nav-item home">Home</a>
+                <a href="#" class="nav-item about">About</a>
+                <a href="politicianprofile.html" class="nav-item profile">Profile</a>
+                <a href="politicianlogin.html" class="nav-item logout">Logout</a>
+            </div>
+        </div>
+    </br></br></br>
+
+    <div class="content">
+        <form class="form" action="politicianprofile.html">
+            <div class="left-section">
+                <div class="form-group">
+                    <label for="politician-id">Politician ID :</label>
+                    <input type="text" id="politician-id">
+                </div>
+                <div >
+                    <center>
+                    <img src="profilephoto.png" alt="Profile Picture" class="profile-image"></center>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="form-group">
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone No :</label>
+                    <input type="text" id="phone" placeholder="Enter phone number">
+                </div>
+                <div class="form-group">
+                    <label for="state">State :</label>
+                    <input type="text" id="state" placeholder="Enter state" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="mp-mla">MP/MLA :</label>
+                    <input type="text" id="mp-mla" placeholder="MP/MLA status" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="assembly">Assembly/Parliament:</label>
+                    <input type="text" id="assembly" placeholder="Assembly/Parliament" readonly>
+                </div>
+
+                <!-- Move the update button inside the right section -->
+                <div class="form-group update-section">
+                    <button type="submit" class="update-btn">Update</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

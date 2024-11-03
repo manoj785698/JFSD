@@ -1,0 +1,184 @@
+/* General styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+}
+
+/* Header */
+.header {
+    position: relative;
+    width: auto;
+    height: 70px;
+    background: #00AEEF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 68px;
+    height: 44px;
+    background-color: #0C5B94;
+}
+
+.citician-title {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgba(0, 75, 108, 0.76);
+    margin-left: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    height: 35px;
+    padding-right: 20px;
+}
+
+.nav-item {
+    padding: 12px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 40px;
+    text-decoration: none;
+}
+
+
+
+
+.login,.about,.contact,.home {
+    background: #26BEFF;
+    position: relative;
+}
+
+.nav-item.login a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Dropdown styles */
+.nav-item.login:hover .dropdown,
+.nav-item.login:focus-within .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Aligns dropdown directly below the login button */
+    left: 0;
+    background: white;
+    border-radius: 5px;
+    width: 107px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 0; /* Ensures no extra margin is added */
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    background: #026697;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+
+.dropdown-item:hover {
+    background: #005680;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+
+
+
+
+
+/* Main content */
+.main-content {
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #0A6BA1;
+    border-radius: 10px;
+    width: 270px;
+    height:170px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between image and text */
+}
+
+.card-image {
+    width: 90px;
+    height: 150px;
+    border-radius: 3px;
+    padding-top: 10px;
+}
+
+.card-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card-text p {
+    font-size: 12px;
+    color: #C3C3C3;
+}
+
+
+/* Word Cloud */
+.word-cloud {
+    display: flex;
+    align-items: stretch;
+    width: 327px;
+    height: 353px;
+    background: url(political-science-vs-politics.jpg) no-repeat center;
+    background-size: contain;
+}
+
+/* Footer */
+footer {
+    background: #052F80;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 15px;
+}

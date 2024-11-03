@@ -1,0 +1,194 @@
+
+/* General styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+}
+
+/* Header */
+.header {
+    position: relative;
+    width: auto;
+    height: 70px;
+    background: #00AEEF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 68px;
+    height: 44px;
+    background-color: #0C5B94;
+}
+
+.citician-title {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgba(0, 75, 108, 0.76);
+    margin-left: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    height: 35px;
+    padding-right: 20px;
+}
+
+.nav-item {
+    padding: 12px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 40px;
+}
+
+.nav-item:hover {
+    color: white; /* Ensures color stays white on hover */
+}
+
+
+.login,.about,.contact,.home {
+    background: #26BEFF;
+    position: relative;
+}
+
+.nav-item.login a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Dropdown styles */
+.nav-item.login:hover .dropdown,
+.nav-item.login:focus-within .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Aligns dropdown directly below the login button */
+    left: 0;
+    background: white;
+    border-radius: 5px;
+    width: 107px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 0; /* Ensures no extra margin is added */
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    background: #026697;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+
+.dropdown-item:hover {
+    background: #005680;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+
+
+
+
+
+/* Main content */
+.main-content {
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-container {
+    background-color: #cbcbcb;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.login-btn {
+    width: 70px;
+    padding: 10px;
+    background-color: #006699;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #005580;
+}
+
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.signup-link {
+    color: #006699;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}

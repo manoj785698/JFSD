@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citician</title>
+    <link rel="stylesheet" href="addpolitician.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <a href="adminhome.html"> <img src="image (1).png" alt="Logo" class="logo"></a>
+            <h1 class="citician-title">Citician</h1>
+        </div>
+        <div class="nav">
+            <a href="adminhome.html" class="nav-item home">Home</a>
+            <a href="addpolitician.html" class="nav-item addpolitician">Add Politician</a>
+            <a href="adminprofile.html" class="nav-item profile">Profile</a>
+            <a href="adminlogin.html" class="nav-item logout">Logout</a>
+        </div>
+    </div>
+</br></br>
+<center><div class="login-container">
+   
+    <h1>Add Politician</h1>
+    <form action="viewallpoliticians.html">
+        <div class="row mb-3"> <!-- Added margin-bottom for spacing -->
+            <div class="col-md-6">
+                <label for="fullName">Full Name (As per EPIC Card)</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+            </div>
+            
+            <div class="col-md-6">
+                <label for="state">Select State</label>
+                <select class="form-control" id="state">
+                    <option value="">Select State</option>
+                    <option value="State1">State 1</option>
+                    <option value="State2">State 2</option>
+                    <option value="State3">State 3</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3"> <!-- Added margin-bottom for spacing -->
+            <div class="col-md-6">
+                <label for="id">ID (Ex: PC069)</label>
+                <input type="text" class="form-control" id="id" placeholder="Enter ID">
+            
+            </div>
+            <div class="col-md-6">
+                <label for="assembly">Select MP/MLA</label>
+                <select class="form-control" id="assembly">
+                    <option value="">Select MP/MLA</option>
+                    <option value="MP">MP</option>
+                    <option value="MLA">MLA</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3"> <!-- Added margin-bottom for spacing -->
+            <div class="col-md-6">
+                <label for="mobileNo">Mobile No</label>
+                <input type="text" class="form-control" id="mobileNo" placeholder="Enter your mobile number">
+            </div>
+            <div class="col-md-6">
+                <label for="parliament">Select Assembly/Parliament</label>
+                <select class="form-control" id="parliament">
+                    <option value="">Select Assembly/Parliament</option>
+                    <option value="Parliament1">Assembly/Parliament 1</option>
+                    <option value="Parliament2">Assembly/Parliament 2</option>
+                    <option value="Parliament3">Assembly/Parliament 3</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3"> <!-- Added margin-bottom for spacing -->
+            <div class="col-md-6">
+                <label for="certificateImage">Upload Certificate</label>
+                <input type="file" class="form-control" id="certificateImage">
+            </div>
+            <div class="col-md-6">
+                <label for="term">Select Term</label>
+                <select class="form-control" id="parliament">
+                    <option value="">Select Term</option>
+                    <option value="2024-2029">2024-2029</option>
+                    <option value="2019-2024">2019-2024</option>
+                    <option value="2014-2019">2014-2019</option>
+                </select>
+            </div>
+        </div>
+
+        <center>
+            <div class="button-group">
+                <button type="submit" class="submit-button">Submit</button>
+                <button type="reset" class="submit-button">Clear</button>
+            </div>
+        </center>
+        
+    </form>
+
+
+</div>
+</center>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+
+<script src="script.js"></script>
+</body>
+</html>

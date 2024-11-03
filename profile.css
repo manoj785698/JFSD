@@ -1,0 +1,171 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+}
+
+/* Header */
+.header {
+    position: relative;
+    width: auto;
+    height: 90px;
+    background: rgba(0, 109, 155, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 68px;
+    height: 44px;
+    background-color: #0C5B94;
+}
+
+.citician-title {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgba(0, 75, 108, 0.76);
+    margin-left: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    height: 35px;
+    padding-right: 20px;
+}
+
+.nav-item {
+    padding: 12px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 40px;
+    text-decoration: none;
+}
+
+
+
+
+.nav-item.login a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .home {
+    background: rgba(24, 59, 100, 0.78);
+} */
+
+.home,.about, .profile, .logout {
+    background: #26BEFF;
+}
+
+/* Main content */
+.main-content {
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    width: 150px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+}
+
+.profile-image {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    padding: 50px;
+}
+
+.submit-button {
+    background-color: #2874A6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.submit-button:hover {
+    background-color: #1B4F72;
+}
+
+/* Footer */
+footer {
+    background: #052F80;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 15px;
+}

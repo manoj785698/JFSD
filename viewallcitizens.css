@@ -1,0 +1,178 @@
+/* General styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+}
+
+/* Header */
+.header {
+    position: relative;
+    width: auto;
+    height: 90px;
+    background: rgba(0, 109, 155, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 68px;
+    height: 44px;
+    background-color: #0C5B94;
+}
+
+.citician-title {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgba(0, 75, 108, 0.76);
+    margin-left: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    height: 35px;
+    padding-right: 20px;
+}
+
+.nav-item {
+    padding: 12px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 40px;
+    text-decoration: none;
+}
+
+
+
+
+.nav-item.login a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .home {
+    background: rgba(24, 59, 100, 0.78);
+} */
+
+.home,.about, .profile, .logout {
+    background: #26BEFF;
+}
+.addpolitician{
+    background: #26BEFF;
+    padding: 2px 14px;
+}
+
+/* Main content */
+.main-content {
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #0A6BA1;
+    border-radius: 10px;
+    width: 184px;
+    padding: 10px;
+    color: white;
+}
+
+.card-image {
+    width: 65px;
+    height: 75px;
+    border-radius: 3px;
+}
+
+.card-title {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.card-text {
+    font-size: 8px;
+    color: #C3C3C3;
+}
+
+/* Word Cloud */
+.word-cloud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 327px;
+    height: 253px;
+    background: url('political-science-vs-politics.jpg') no-repeat center;
+    background-size: contain;
+}
+
+/* Footer */
+footer {
+    background: #052F80;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.updates {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+    border: 2px solid #e9ebec;
+}
+
+.updates table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.updates th, .updates td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Add borders for separation */
+}
+
+.updates th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.update-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    background-color: #0056b3;
+}

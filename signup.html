@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citician</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <center><h1 style="color: rgba(0, 75, 108, 0.76);"><i>Citician</i></h1></center>
+    <div class="header">
+        <div class="logo-container">
+            <a href="index.html">  <img src="image (1).png" alt="Logo" class="logo"></a>
+        
+            <h1 class="citician-title"></h1>
+        </div>
+        <div class="nav">
+            <a href="index.html" class="nav-item home">Home</a>
+            <a href="#" class="nav-item about">About</a>
+            <a href="#" class="nav-item contact">Contact</a>
+            <div class="nav-item login">
+                <a href="#">Login</a>
+                <div class="dropdown">
+                    <a href="citizenlogin.html" class="dropdown-item">Citizen</a>
+                    <a href="politicianlogin.html" class="dropdown-item">Politician</a>
+                    <a href="adminlogin.html" class="dropdown-item">Admin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</br> 
+<center>
+<div class="login-container">
+   
+        <h1>Sign Up</h1>
+        <form action="citizenlogin.html">
+            <div class="row mb-3"> <!-- Added margin-bottom for spacing -->
+                <div class="col-md-6">
+                    <label for="fullName">Full Name (As per EPIC Card)</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                </div>
+                <div class="col-md-6">
+                    <label for="state">Select State</label>
+                    <select class="form-control" id="state">
+                        <option value="">Select State</option>
+                        <option value="State1">State 1</option>
+                        <option value="State2">State 2</option>
+                        <option value="State3">State 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mb-3"> <!-- Added margin-bottom for spacing -->
+                <div class="col-md-6">
+                    <label for="epicCardNo">EPIC Card No</label>
+                    <input type="text" class="form-control" id="epicCardNo" placeholder="Enter your EPIC Card number">
+                </div>
+                <div class="col-md-6">
+                    <label for="assembly">Select Assembly</label>
+                    <select class="form-control" id="assembly">
+                        <option value="">Select Assembly</option>
+                        <option value="Assembly1">Assembly 1</option>
+                        <option value="Assembly2">Assembly 2</option>
+                        <option value="Assembly3">Assembly 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mb-3"> <!-- Added margin-bottom for spacing -->
+                <div class="col-md-6">
+                    <label for="mobileNo">Mobile No</label>
+                    <input type="text" class="form-control" id="mobileNo" placeholder="Enter your mobile number">
+                </div>
+                <div class="col-md-6">
+                    <label for="parliament">Select Parliament</label>
+                    <select class="form-control" id="parliament">
+                        <option value="">Select Parliament</option>
+                        <option value="Parliament1">Parliament 1</option>
+                        <option value="Parliament2">Parliament 2</option>
+                        <option value="Parliament3">Parliament 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mb-3"> <!-- Added margin-bottom for spacing -->
+                <div class="col-md-6">
+                    <label for="epicCardImage">Upload EPIC Card</label>
+                    <input type="file" class="form-control" id="epicCardImage">
+                </div>
+                <div class="col-md-6">
+                    <label for="villageCityTown">Village/City/Town</label>
+                    <input type="text" class="form-control" id="villageCityTown" placeholder="Enter your village/city/town">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="citizenlogin.html">Log in</a></p>
+    
+
+</div>
+</center>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+
+    <script src="script.js"></script>
+</body>
+</html>
